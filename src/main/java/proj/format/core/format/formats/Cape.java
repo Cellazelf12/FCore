@@ -2,7 +2,6 @@ package proj.format.core.format.formats;
 
 import java.util.List;
 
-import proj.format.core.format.Formats;
 import proj.format.core.format.IFormat;
 import proj.format.core.utilities.general.DirectionalFormatRetriever;
 import proj.format.core.utilities.objects.Loc;
