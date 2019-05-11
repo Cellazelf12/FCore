@@ -4,25 +4,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
+import proj.format.core.format.formats.Cape;
+import proj.format.core.format.formats.CrossFire;
+import proj.format.core.format.formats.Exact;
+import proj.format.core.format.formats.Hat;
+import proj.format.core.format.formats.Helix;
+import proj.format.core.format.formats.Random;
+import proj.format.core.format.formats.RandomLayer;
+import proj.format.core.format.formats.RandomRoundLayer;
+import proj.format.core.format.formats.Square;
+import proj.format.core.format.formats.Wing;
+import proj.format.core.format.formats.XYCircle;
+import proj.format.core.format.formats.XZCircle;
+import proj.format.core.format.formats.YZCircle;
 
 public enum Formats {
     
     NONE(null),
-//    RANDOM(new Random()),
-//    RANDOM_LAYER(new RandomLayer()), 
-//    RANDOM_ROUND_LAYER(new RandomRoundLayer()), 
-//    EXACT(new Exact()),
-//    SQUARE(new Square()),
-////    PENNY(new Penny()),
-//    CROSS_FIRE(new CrossFire()),
-//    HELIX(new Helix()),
-////    FIREFLY(new Firefly()),
-//    WING(new Wing()),
-//    HAT(new Hat()),
-//    CAPE(new Cape()),
-//    XY_CIRCLE(new XYCircle()),
-//    XZ_CIRCLE(new XZCircle()),
-//    YZ_CIRCLE(new YZCircle()),
+    RANDOM(new Random()),
+    RANDOM_LAYER(new RandomLayer()), 
+    RANDOM_ROUND_LAYER(new RandomRoundLayer()), 
+    EXACT(new Exact()),
+    SQUARE(new Square()),
+//    PENNY(new Penny()),
+    CROSS_FIRE(new CrossFire()),
+    HELIX(new Helix()),
+//    FIREFLY(new Firefly()),
+    WING(new Wing()),
+    HAT(new Hat()),
+    CAPE(new Cape()),
+    XY_CIRCLE(new XYCircle()),
+    XZ_CIRCLE(new XZCircle()),
+    YZ_CIRCLE(new YZCircle()),
     ;
     
     @Getter

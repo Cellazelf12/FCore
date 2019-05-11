@@ -7,7 +7,7 @@ import proj.format.core.format.IFormat;
 import proj.format.core.utilities.general.CircleCalculator;
 import proj.format.core.utilities.objects.Loc;
 
-public class YZCIRCLE implements IFormat {
+public class YZCircle implements IFormat {
 
     @Override
     public String getString() {
