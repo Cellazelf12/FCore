@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>proj.format.core</groupId>
 	<artifactId>FCore</artifactId>
-	<version>1</version>
+	<version>2</version>
 	<name>FCore</name>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
