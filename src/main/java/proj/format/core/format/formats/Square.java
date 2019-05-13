@@ -19,7 +19,7 @@ public class Square implements IFormat {
     }
 
     @Override
-    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double higth) {
+    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double height) {
         List<Loc> list = new ArrayList<Loc>();
         
         Loc backUp = location.clone();
@@ -44,7 +44,7 @@ public class Square implements IFormat {
         }
             
 
-        loc.setY(loc.getY() + higth);
+        loc.setY(loc.getY() + height);
         
         
         list.add(loc);
@@ -73,7 +73,7 @@ public class Square implements IFormat {
                 locc =  setZ(backUp, width, rate, im.intValue(), false);
             }
             
-            locc.setY(locc.getY() + higth);
+            locc.setY(locc.getY() + height);
             
             list.add(locc);
             

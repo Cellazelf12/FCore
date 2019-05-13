@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>proj.format.core</groupId>
 	<artifactId>FCore</artifactId>
-	<version>2</version>
+	<version>3</version>
 	<name>FCore</name>
 	
 	<dependencies>

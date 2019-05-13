@@ -20,7 +20,7 @@ public class Random implements IFormat {
     }
 
     @Override
-    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double higth) {
+    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double height) {
         List<Loc> loc = new ArrayList<Loc>();
         Double totalWidth = width*2;
         Double totalLength = width*2;
@@ -30,7 +30,7 @@ public class Random implements IFormat {
             loc.add(
                     new Loc(
                             location.getX() - width + Randoms.randomDouble(0.0, totalWidth), 
-                            location.getY() - higth + Randoms.randomDouble(0.0, totalHigth), 
+                            location.getY() - height + Randoms.randomDouble(0.0, totalHigth), 
                             location.getZ() - width + Randoms.randomDouble(0.0, totalLength)));
         }
         return loc;

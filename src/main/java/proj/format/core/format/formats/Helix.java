@@ -20,14 +20,14 @@ public class Helix implements IFormat {
     }
 
     @Override
-    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double higth) {
+    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double height) {
         List<Loc> list = new ArrayList<Loc>();
         double[] positions;
 
         frame = getReversedInt(frame, rate);
 
         Double w = frame * (width / rate);
-        Double h = (higth - (frame)) - 1;
+        Double h = (height - (frame * (height/rate))) - 1;
         
         positions = CircleCalculator.getPoint(w, rate, frame);
         list.add(new Loc(location.getX() + positions[0], location.getY() + h, location.getZ() + positions[1]));

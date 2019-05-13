@@ -20,7 +20,7 @@ public class CrossFire implements IFormat {
     }
 
     @Override
-    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double higth) {
+    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double height) {
         List<Loc> list = new ArrayList<Loc>();
         double[] positions;
         

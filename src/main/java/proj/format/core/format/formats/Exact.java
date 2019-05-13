@@ -19,9 +19,9 @@ public class Exact implements IFormat {
     }
 
     @Override
-    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double higth) {
+    public List<Loc> getLocs(Loc location, Integer rate, Integer many, Integer frame, Double width, Double height) {
         List<Loc> locs = new ArrayList<Loc>();
-        Double y = location.getY() + higth;
+        Double y = location.getY() + height;
         for(int i = 0; i <= Math.abs(many); i++)
             locs.add(new Loc(location.getX(), y, location.getZ(), location.getYaw(), location.getPitch()));
         return locs;
