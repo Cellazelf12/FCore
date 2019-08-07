@@ -4,7 +4,18 @@ FCore is a library of formatting algorithms, specifically used in 3 dimensional 
 
 ## Installation
 
-There is no public repository for FCore. This means you must clone this project into your workspace.
+```xml
+<repository>
+    <id>jitpack.io</id>
+	<url>https://jitpack.io</url>
+</repository>
+
+<dependency>
+    <groupId>com.github.westernpine</groupId>
+    <artifactId>Marble</artifactId>
+    <version>master-SNAPSHOT</version>
+</dependency>
+```
 
 ## Usage
 
@@ -20,5 +31,9 @@ The more complex version of this allows more adjustment and freedom. The Rate is
 List<Loc> formatPart = Formats.RANDOM.getLocs(location, rate, many, frame, width, higth);
 ```
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+If you have any other questions, comments, or concerns, feel free to contact me here on github or use my website in my profile. Thank you!
+
+License
+----
+
+[MIT](https://choosealicense.com/)
